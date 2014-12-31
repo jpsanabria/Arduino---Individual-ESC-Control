@@ -14,7 +14,7 @@ void setup() {
 	/** Setup the digital pin to be output mode */
 	pinMode(PIN_ESC1, OUTPUT);
 	/** Initialize the ESC */
-	esc1.begin(PIN_ESC1);
+	esc1.attach(PIN_ESC1);
 	/** Initialize serial so we can print out debug statements */
 	Serial.begin(9600);
 }
